@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Heroku Unchained &middot;  Arindam Pradhan" />
+  	<meta property="og:site_name" content="Arindam Pradhan" />
+  	<meta property="og:url" content="http://arindampradhan.github.io/heroku-unchained/" />
+    
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="0001-01-01T00:00:00Z" />
+
+    
+    <meta property="og:article:tag" content="django" />
+    
+    <meta property="og:article:tag" content="Heroku" />
+    
+    
+
+  <title>
+     Heroku Unchained &middot;  Arindam Pradhan
+  </title>
+
+    <meta name="description" content="I am so Awesome!" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="http://arindampradhan.github.io/images/favicon.ico" type="image/x-icon">
+	  <link rel="apple-touch-icon" href="http://arindampradhan.github.io/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="http://arindampradhan.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://arindampradhan.github.io/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://arindampradhan.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Arindam Pradhan" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.14" />
+
+    <link rel="canonical" href="http://arindampradhan.github.io/heroku-unchained/" />
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://arindampradhan.github.io/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://arindampradhan.github.io/about">I am Arindam</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/arindampradhan">Github</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://plus.google.com/&#43;ArindamPradhanIM/">Google&#43;</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/rrindam">Twitter</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://arindampradhan.github.io/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://arindampradhan.github.io/"><img src="http://arindampradhan.github.io/images/logo.gif" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Heroku Unchained</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="0001-01-01T00:00:00Z">
+            Jan 1, 0001
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://arindampradhan.github.io/tags/django/">#django</a></span>
+         
+          <span class="post-tag small"><a href="http://arindampradhan.github.io/tags/heroku/">#Heroku</a></span>
+         
+        </section>
+    </header>
+  
+    <section class="post-content">
+      <p>I was really excited to try out <em>heroku</em>, my <em>godaddy</em> webservice sucked. After enabling ssh, it barely managed to give me python2.6.2. Wish I could try old better web platforms.</p>
+
+<p>Anyways, I got to find out some hacks wih heroku which I am going to share.</p>
+
+<p>I will be using django with heroku, post about some ideal settings for heroku that can be used and I found helpful.
+Some of the repos I have found helpful <a href="https://github.com/heroku/heroku-django-template">heroku_django_app</a>.
+Usually a mini django project format has.
+&lt;!&ndash;excerpt&ndash;&gt;</p>
+
+<pre><code>your_project
+├── db.sqlite3
+├── manage.py
+├── your_project
+│    ├── __init__.py
+│    ├── settings.py
+│    ├── urls.py
+│    └── wsgi.py
+└── static
+    └── templates
+        └── signup.html
+</code></pre>
+
+<p>For <strong>porting</strong> to heroku you can follow <a href="https://devcenter.heroku.com/articles/getting-started-with-django">getting_started</a>, after that the project might look like:</p>
+
+<pre><code>your_project
+├── db.sqlite3
+├── .git
+├── Procfile
+├── requirements.txt
+├── manage.py
+├── your_project
+│    ├── __init__.py
+│    ├── settings.py
+│    ├── urls.py
+│    └── wsgi.py
+└── static
+    └── templates
+        └── signup.html
+
+Procfile
+web: gunicorn your_project.wsgi --log-file -
+</code></pre>
+
+<p>After adding the required dynos.
+A better <strong>settings</strong> can be.</p>
+
+<p>The <code>your_project</code> can be customized for heroku.</p>
+
+<pre><code>your_project
+├── manage.py
+├── .git
+├── Procfile
+├── requirements.txt
+├── mvp_landing
+│   ├── __init__.py
+│   ├── settings
+│   │   ├── base.py
+│   │   ├── __init__.py
+│   │   ├── local.py
+│   │   └── production.py
+│   ├── settings_old.py
+│   ├── urls.py
+│   └── wsgi.py
+|
+|
+</code></pre>
+
+<ul>
+<li>Edit the <code>settings.py</code> file name to <code>settings_old.py</code>.</li>
+<li>Create a <code>settings</code> directory. Under this directory create base.py, local.py, production.py.</li>
+<li>The base has the the same code as settings.py but a few things differ such as.</li>
+</ul>
+
+<pre><code>    
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+    to 
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+
+</code></pre>
+
+<p>The <code>__init__.py</code> file.</p>
+
+<pre><code>from .base import *
+
+try:
+    from .local import *
+    live = False
+except:
+    live = True
+
+if live:memcached
+    from .product import *
+</code></pre>
+
+<p>The <code>production.py</code> files holds the configuration for heroku:</p>
+
+<pre><code># Parse database configuration from $DATABASE_URL
+from django.conf import settings
+import os
+DEBUG = False
+TEMPLATE_DEBUG = True
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['nameofwebsite.com','herokusite.herokuapp.com']
+
+# # Static asset configuration (Optional
+# import os
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = 'staticfiles'
+# STATIC_URL = '/static/'
+
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
+</code></pre>
+
+<p>The <code>local.py</code> file will hold the configuration for local settings the you want to keep like.</p>
+
+<pre><code>ALLOWED_HOSTS = ['*']
+
+# Static asset configuration (Optional
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+</code></pre>
+
+<p>Heroku is providing lots of services, especially REDIS and MEMCACHED. We can really built minimal cool apps on top of it.
+Will soon update new stuffs with heroku. Long live <em>heroku</em>.</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://arindampradhan.github.io/" style="background-image: url(http://arindampradhan.github.io/images/logo.gif)"><span class="hidden">Arindam Pradhan's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://arindampradhan.github.io/">Arindam Pradhan</a></h4>
+  
+  <p>Open source enthusiast.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location"><a href="https://www.google.co.in/maps/place/Bhubaneswar,%20India">Bhubaneswar, India</a></span>
+    <span class="author-link icon-link"><a href="https://www.arindam.io">www.arindam.io</a></span>
+  </div>
+</section>
+
+
+
+    
+    <section class="share">
+      <h4>Share this post</h4>
+      <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Heroku%20Unchained&amp;url=http%3a%2f%2farindampradhan.github.io%2fheroku-unchained%2f"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+      </a>
+      <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2farindampradhan.github.io%2fheroku-unchained%2f"
+          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+      </a>
+      <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2farindampradhan.github.io%2fheroku-unchained%2f"
+         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+      </a>
+    </section>
+    
+
+    
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = 'Arindam';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Arindam Pradhan</a> All rights reserved - 2015</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://arindampradhan.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="http://arindampradhan.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://arindampradhan.github.io/js/index.js"></script>
+
+</body>
+</html>
+

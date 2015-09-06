@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heroku on Arindam Pradhan</title>
+    <link>http://arindampradhan.github.io/tags/heroku/</link>
+    <description>Recent content in Heroku on Arindam Pradhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <atom:link href="http://arindampradhan.github.io/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Heroku Unchained</title>
+      <link>http://arindampradhan.github.io/heroku-unchained/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://arindampradhan.github.io/heroku-unchained/</guid>
+      <description>&lt;p&gt;I was really excited to try out &lt;em&gt;heroku&lt;/em&gt;, my &lt;em&gt;godaddy&lt;/em&gt; webservice sucked. After enabling ssh, it barely managed to give me python2.6.2. Wish I could try old better web platforms.&lt;/p&gt;
+
+&lt;p&gt;Anyways, I got to find out some hacks wih heroku which I am going to share.&lt;/p&gt;
+
+&lt;p&gt;I will be using django with heroku, post about some ideal settings for heroku that can be used and I found helpful.
+Some of the repos I have found helpful &lt;a href=&#34;https://github.com/heroku/heroku-django-template&#34;&gt;heroku_django_app&lt;/a&gt;.
+Usually a mini django project format has.
+&amp;lt;!&amp;ndash;excerpt&amp;ndash;&amp;gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;your_project
+├── db.sqlite3
+├── manage.py
+├── your_project
+│    ├── __init__.py
+│    ├── settings.py
+│    ├── urls.py
+│    └── wsgi.py
+└── static
+    └── templates
+        └── signup.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For &lt;strong&gt;porting&lt;/strong&gt; to heroku you can follow &lt;a href=&#34;https://devcenter.heroku.com/articles/getting-started-with-django&#34;&gt;getting_started&lt;/a&gt;, after that the project might look like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;your_project
+├── db.sqlite3
+├── .git
+├── Procfile
+├── requirements.txt
+├── manage.py
+├── your_project
+│    ├── __init__.py
+│    ├── settings.py
+│    ├── urls.py
+│    └── wsgi.py
+└── static
+    └── templates
+        └── signup.html
+
+Procfile
+web: gunicorn your_project.wsgi --log-file -
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After adding the required dynos.
+A better &lt;strong&gt;settings&lt;/strong&gt; can be.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;your_project&lt;/code&gt; can be customized for heroku.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;your_project
+├── manage.py
+├── .git
+├── Procfile
+├── requirements.txt
+├── mvp_landing
+│   ├── __init__.py
+│   ├── settings
+│   │   ├── base.py
+│   │   ├── __init__.py
+│   │   ├── local.py
+│   │   └── production.py
+│   ├── settings_old.py
+│   ├── urls.py
+│   └── wsgi.py
+|
+|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Edit the &lt;code&gt;settings.py&lt;/code&gt; file name to &lt;code&gt;settings_old.py&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Create a &lt;code&gt;settings&lt;/code&gt; directory. Under this directory create base.py, local.py, production.py.&lt;/li&gt;
+&lt;li&gt;The base has the the same code as settings.py but a few things differ such as.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;    
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+    to 
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;__init__.py&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from .base import *
+
+try:
+    from .local import *
+    live = False
+except:
+    live = True
+
+if live:memcached
+    from .product import *
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;production.py&lt;/code&gt; files holds the configuration for heroku:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Parse database configuration from $DATABASE_URL
+from django.conf import settings
+import os
+DEBUG = False
+TEMPLATE_DEBUG = True
+
+import dj_database_url
+DATABASES[&#39;default&#39;] = dj_database_url.config()
+
+# Honor the &#39;X-Forwarded-Proto&#39; header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = (&#39;HTTP_X_FORWARDED_PROTO&#39;, &#39;https&#39;)
+
+# Allow all host headers
+ALLOWED_HOSTS = [&#39;nameofwebsite.com&#39;,&#39;herokusite.herokuapp.com&#39;]
+
+# # Static asset configuration (Optional
+# import os
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = &#39;staticfiles&#39;
+# STATIC_URL = &#39;/static/&#39;
+
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, &#39;static&#39;),
+# )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;local.py&lt;/code&gt; file will hold the configuration for local settings the you want to keep like.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALLOWED_HOSTS = [&#39;*&#39;]
+
+# Static asset configuration (Optional
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = &#39;staticfiles&#39;
+STATIC_URL = &#39;/static/&#39;
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, &#39;static&#39;),
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Heroku is providing lots of services, especially REDIS and MEMCACHED. We can really built minimal cool apps on top of it.
+Will soon update new stuffs with heroku. Long live &lt;em&gt;heroku&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

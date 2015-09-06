@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://arindampradhan.github.io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://arindampradhan.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://arindampradhan.github.io/introduction-to-vim/</loc>
+  </url>
+  
+  <url>
+    <loc>http://arindampradhan.github.io/pycon-india/</loc>
+  </url>
+  
+  <url>
+    <loc>http://arindampradhan.github.io/my-linux-daily-apps/</loc>
+  </url>
+  
+  <url>
+    <loc>http://arindampradhan.github.io/heroku-unchained/</loc>
+  </url>
+  
+  <url>
+    <loc>http://arindampradhan.github.io/pybelgaum/</loc>
+  </url>
+  
+</urlset>

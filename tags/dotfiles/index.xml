@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dotfiles on Arindam Pradhan</title>
+    <link>http://arindampradhan.github.io/tags/dotfiles/</link>
+    <description>Recent content in Dotfiles on Arindam Pradhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <atom:link href="http://arindampradhan.github.io/tags/dotfiles/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to Vim</title>
+      <link>http://arindampradhan.github.io/introduction-to-vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://arindampradhan.github.io/introduction-to-vim/</guid>
+      <description>&lt;p&gt;Well if you are new to vim or linux or a wannabe programmer this post is surely for you. If you google about vim you will get hell of a lot of answers which gets more and more complicated. So, just read the wiki article to get the story. And the moment you start using it you will realize it&amp;rsquo;s not your cup of tea and cannot be jot up in one day.&lt;/p&gt;
+
+&lt;p&gt;First thing first, if you are using windows then don&amp;rsquo;t try to install vim on it because it&amp;rsquo;s more than a Install and an I agree box. It will get way more tougher than you think:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vim is a primarily a terminal based application.&lt;/li&gt;
+&lt;li&gt;Vim works best on linux and unix based systems.&lt;/li&gt;
+&lt;li&gt;What I meant is, you should use ubuntu or mac osx. Fedora works great too.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;So go to your terminal and type:
+&lt;code&gt;sudo apt-get install vim&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;apt-get&lt;/code&gt; is for ubuntu&lt;br /&gt;
+replace it with &lt;code&gt;yum&lt;/code&gt; if you are using fedora.&lt;/p&gt;
+
+&lt;p&gt;So let me explain you the file structure of vim:&lt;/p&gt;
+
+&lt;p&gt;First of all, after installing you have to manually create a folder called .vim and a file called .vimrc on the Home directory of your machine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+.	Home
+	├── .vim(folder)
+	│   └── I keep all the subfolders and important files.
+	│   
+	└── .vimrc(file)
+		└── I am the monster you must understand before using vim
+	    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These are dotfiles begins with dot so are hidden in linux. To see them, type &amp;ldquo;Ctrl-h&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Both the &lt;code&gt;.vimrc&lt;/code&gt; file and the &lt;strong&gt;.vim&lt;/strong&gt; folder are used to configure vim editor. Initially you will get a version of vim which will be nothing cooler than a terminal :P.&lt;/p&gt;
+
+&lt;p&gt;In this post I will talk about .vimrc .&lt;/p&gt;
+
+&lt;p&gt;Well vim is a very powerful text editor. So, to maintain it or configure it uses a Language called VimL and can also use other scripting languages too.&lt;/p&gt;
+
+&lt;p&gt;So, copy the following and paste it on your .vimrc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set number
+colorscheme darkblue
+abbr teh the
+abbr email &amp;lt;your_email@gamil.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now open up your vim editor.&lt;/p&gt;
+
+&lt;p&gt;You will see the line numbers in vim and background changed. And type &amp;ldquo;teh&amp;rdquo; a common spelling mistake.You will see them automaticaly get corrected.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t see them, that probably means vim may not be opening .vimrc at startup and you need to manually configure it.
+TO check hit  &amp;amp;ltESC&amp;amp;gt :scriptnames.
+See if &lt;code&gt;vimrc&lt;/code&gt; is mentioned. If not google about how can you configure vim startups to point to .vimrc. You will probably find a lot of commands and solution online.&lt;/p&gt;
+
+&lt;p&gt;Lets get started with &lt;code&gt;vimrc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;##Modes&lt;/p&gt;
+
+&lt;p&gt;Vim works in &lt;strong&gt;three modes&lt;/strong&gt; insert ,visual and normal.&lt;/p&gt;
+
+&lt;p&gt;You can map any command  to the keystrokes in the three modes:
+&lt;code&gt;imap,vmap &amp;amp; nmap&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and combo mapping like nnoremap,inoremap and bunch of others.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This shows you the &lt;a href=&#34;http://vim.wikia.com/wiki/Displaying_the_current_Vim_environment&#34;&gt;list&lt;/a&gt; of all the mappings.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The commands you type in the vim panel are the same thing you can write in your vimrc file.&lt;/p&gt;
+
+&lt;p&gt;Actually the only thing vim does is runs the file vimrc at the startup.
+Hence you see the command above in vimrc can be written through your vim terminal hitting escape like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:colorscheme blue
+:set number
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lets change a few more things in .vimrc and restart vim.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nnoremap &amp;lt;C-h&amp;gt; :tabprevious&amp;lt;CR&amp;gt;
+nnoremap &amp;lt;C-l&amp;gt; :tabnext&amp;lt;CR&amp;gt;
+nnoremap &amp;lt;C-t&amp;gt; :tabnew&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In your vim terminal
+hit ESC  and write &lt;code&gt;:tabnew&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now in vim hit &lt;code&gt;ctrl-t , ctrl-h , ctrl-l.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Check some vimrc &lt;a href=&#34;http://www.dotfiles.org/.vimrc&#34;&gt;vimrc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now lets source &lt;a href=&#34;http://www.dotfiles.org/~omab/.vimrc&#34;&gt;one&lt;/a&gt; to your .vim. Name it &lt;code&gt;test.vim&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;go to your vimrc:
+and add:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;quot;source files
+source ~/.vim/test.vim
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;The structure:
+
+.	Home
+	├── .vim(folder)
+	│   ├── test.vim
+	│   └── other files and folders you don&#39;t need to bother.
+	└── .vimrc(file)
+		└──
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;###Hacks you should try
+Check your new vim. Try other configuration too and don&amp;rsquo;t source them all together.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My linux daily apps</title>
+      <link>http://arindampradhan.github.io/my-linux-daily-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://arindampradhan.github.io/my-linux-daily-apps/</guid>
+      <description>
+
+&lt;p&gt;How do you maintain your projects with all the devices and application in a perfect sync? How do you work perfectly in a order that effectively makes your work smoother and easier .Well the answer could be &lt;em&gt;dropbox&lt;/em&gt; but still I am talking about a more synchronized way of doing things on your linux machine.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The zen of workflow for your linux machine&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;how-should-i-do-things-then:a6b5ee297b3ead4a9234f9bc48abd76c&#34;&gt;How should I do things then?&lt;/h2&gt;
+
+&lt;p&gt;A few apps and settings that can boost your productivity on a daily basis.
+But these are mostly ncurses apps &amp;hellip;
+Before you use them&amp;hellip; few things you need to learn art.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;##Learn to confgure your linux&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Linux is kind of like a piece of open art. It only
+gets beautiful for you the way you paint it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Without further ado&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;tmux&lt;/li&gt;
+&lt;li&gt;youtube-dl&lt;/li&gt;
+&lt;li&gt;cmus&lt;/li&gt;
+&lt;li&gt;mplayer&lt;/li&gt;
+&lt;li&gt;pyradio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_1.png&#34; alt=&#34;advanced_terminal_photo&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;###Advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;mplayer lets you play music through terminal.&lt;/li&gt;
+&lt;li&gt;cmus is a ncurses music player&lt;/li&gt;
+&lt;li&gt;youtube-dl as name suggests&lt;/li&gt;
+&lt;li&gt;tmux is the terminal multiplexer (it lets you create sessions and divides terminal to small screens as shown)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Installation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install tmux
+sudo apt-get install youtube-dl
+sudo apt-get install cmus
+sudo apt-get install mplayer
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##youtube-dl hacks&lt;/p&gt;
+
+&lt;p&gt;It works great with videos and music files too.&lt;/p&gt;
+
+&lt;p&gt;You can use it to download music from soundcloud and myspace. Well the proper word will be called stream.&lt;/p&gt;
+
+&lt;p&gt;Right click on your song and copy link location and attach the url at the end of youtube-dl on your terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_2.png&#34; alt=&#34;youtube...soundcloud&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_3.png&#34; alt=&#34;youtube...terminal&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_4.png&#34; alt=&#34;youtube...myspace&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It works on myspace too. Cool, no IDM shit any more&amp;hellip; just copy and paste this sucker.&lt;/p&gt;
+
+&lt;p&gt;##Cmus&lt;/p&gt;
+
+&lt;p&gt;Cmus is one of the best ncurses music player you can have.
+It comes with tons of functionality ranging from creating playlist, list names by artist to creating queue and music tagging.&lt;/p&gt;
+
+&lt;p&gt;Just hit 1 2 &amp;hellip; and so on, you will see all the views.&lt;/p&gt;
+
+&lt;p&gt;Just to help with to add all the music in a folder you just need the following command:
+hit &lt;code&gt;ctrl-C&lt;/code&gt; then  &lt;code&gt;:add ~/Music&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;###Usage:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Hit enter to play 
+Hit c to stop
+Hit e to add to queue
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This &lt;a href=&#34;https://github.com/cmus/cmus/blob/master/Doc/cmus-tutorial.txt&#34;&gt;tutorial&lt;/a&gt; will give you enough experience.&lt;/p&gt;
+
+&lt;p&gt;Want to know &lt;a href=&#34;http://www.tuxarena.com/static/cmus_guide.php&#34;&gt;more about cmus&lt;/a&gt; about cmus ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And yes _ cmus won&amp;rsquo;t work without mplayer_.So don&amp;rsquo;t forget to install mplayer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install mplayer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Tmux&lt;/p&gt;
+
+&lt;p&gt;Tmux is a longer topic like vim.It has really cool features with ssh and session sharing. I will soon update in another blog post.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

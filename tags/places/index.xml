@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Places on Arindam Pradhan</title>
+    <link>http://arindampradhan.github.io/tags/places/</link>
+    <description>Recent content in Places on Arindam Pradhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <atom:link href="http://arindampradhan.github.io/tags/places/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PyBelgaum</title>
+      <link>http://arindampradhan.github.io/pybelgaum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://arindampradhan.github.io/pybelgaum/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/pybelgaum.png&#34; alt=&#34;pycon&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For people who don&amp;rsquo;t know, &lt;a href=&#34;http://pybelgaum.org/2015/&#34;&gt;PyBelgaum&lt;/a&gt; 2015 is a local Python conference happening in Belgaum. It is a 2-day conference, conducted by the Python community under &lt;a href=&#34;https://www.python.org/psf/&#34;&gt;PSF&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was a speaker and my talk was on  &lt;a href=&#34;http://junction.pybelgaum.org/pybelgaum/proposals/python-wrapping-a-json-api/&#34;&gt;&lt;strong&gt;Python wrapping a Json API&lt;/strong&gt;&lt;/a&gt;. - &lt;a href=&#34;https://github.com/arindampradhan/wrapping-api-talk&#34;&gt;&lt;strong&gt;slides&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;I traveled &lt;em&gt;1,600 Km for 3 days&lt;/em&gt;. Most of my time went sleeping on trains and buses. It felt like crazy, but I was excited to give a talk on my project.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;talk&lt;/strong&gt; was about &lt;a href=&#34;https://github.com/arindampradhan/yaaHN&#34;&gt;yaaHN&lt;/a&gt; which wraps a simple &lt;a href=&#34;https://github.com/HackerNews/API&#34;&gt;HackerNews API&lt;/a&gt;. It was a beginner talk and I was explaining students about &lt;strong&gt;REST APIs&lt;/strong&gt; and services i.e coursera and hackernews api, how they work. In the end I showed them a &lt;a href=&#34;https://github.com/arindampradhan/mockHN&#34;&gt;app&lt;/a&gt; could be easily written using such APIs. The crowd was cheerful and very supportive.&lt;/p&gt;
+
+&lt;p&gt;Looking back, things have changed. I started learning python a year ago, an electrical major, trying to self-teach python from all kinds of website and opensource projects. Reading code from other people has helped me a lot than reading any books.&lt;/p&gt;
+
+&lt;p&gt;Anyways, back to my schedule :&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;workshops&lt;/strong&gt; I attended:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://junction.pybelgaum.org/pybelgaum/proposals/learn-python-101-workshop/&#34;&gt;Learn Python - 101 Workshop&lt;/a&gt; - Kracekumar Ramaraju&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://junction.pybelgaum.org/pybelgaum/proposals/gotchas-in-python-when-python-gets-slippery-for-you/&#34;&gt;Gotchas in Python - When Python gets slippery for you&lt;/a&gt; - Anand B Pillai&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://junction.pybelgaum.org/pybelgaum/proposals/python-for-generating-network-anomalies/&#34;&gt;Python for Generating Network Anomalies&lt;/a&gt; - Srinivas Naik&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and the &lt;strong&gt;Talks&lt;/strong&gt; I attended:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://junction.pybelgaum.org/pybelgaum/proposals/understanding-pythons-datastructure-dictionary/&#34;&gt;Understanding Python&amp;rsquo;s DataStructure: Dictionary&lt;/a&gt; - Sayan Chowdhury&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://junction.pybelgaum.org/pybelgaum/proposals/ctr-estimation-using-machine-learning-algorithms-in-python/&#34;&gt;CTR estimation using machine learning algorithms in Python&lt;/a&gt; - Rohit singh&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All in all the talks were great, food was great :D. Loved it, the experience was chilling and my favourite part was attending the workshop&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Gotchas in Python - When Python gets slippery for you. It was fun trolling python.&lt;/p&gt;
+
+&lt;p&gt;Usually people love trolling javascript for it&amp;rsquo;s weirdness, but python too gets it wrong at some point :D.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And among talks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Understanding Python&amp;rsquo;s DataStructure: Dictionary. It was indeed a depth talk on dictionary, how it&amp;rsquo;s key clashes and how to use it for better performance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I had a chance to talk to Sayan (great dude who works at Hackerearth, a proud mozillian and a gsoc 13), met him on last year Pycon India. Back then he was explaining me how &lt;strong&gt;opensource&lt;/strong&gt; works. Contributing to opensource projects is fun though. It&amp;rsquo;s hilarious when two PRs clash.&lt;/p&gt;
+
+&lt;p&gt;I actually had a situation where I had to update a PR (reset/revert the previous commit) and another PR got merged at the same time. Unfortunately, both the PRs had a file in common which raised a conflict and due to the force updates there was a diversion in my branch. And finally while fixing it my repo crashed :P. It took me 5hrs to fix it. Haha .. :D&lt;/p&gt;
+
+&lt;p&gt;I will come up with new stories&amp;hellip;stay tuned&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pycon India</title>
+      <link>http://arindampradhan.github.io/pycon-india/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://arindampradhan.github.io/pycon-india/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/pycon1.jpg&#34; alt=&#34;pycon&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This was my first pycon, I was eager to meet some of the greatest minds in the opensource world.
+The keynote started with &lt;a href=&#34;https://twitter.com/kushaldas&#34;&gt;Kushal Das&lt;/a&gt;&amp;hellip;and he shared some of his wonderful experiences with python. How he began his journey in his undergraduate years and how some of his projects helped the local community educate using computers.
+He has also been a core contributer to a wide variety of upstream projects.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Upstream&lt;/strong&gt; a powerful word I came across.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;my-schedule:507fb2c83b603b6e0e394a44d252d557&#34;&gt;My schedule&lt;/h1&gt;
+
+&lt;p&gt;It&amp;rsquo;s was confusing to decide which talk to attend because they had &lt;strong&gt;&lt;a href=&#34;http://in.pycon.org/2014/schedule.html&#34;&gt;parallel talks&lt;/a&gt;&lt;/strong&gt; running on 2 auditoriums. So, I had to choose.. They all seem very interesting and most of them were 45min talks.&lt;/p&gt;
+
+&lt;p&gt;Without further a do, I decided to go to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/108-python-spark-lightning-fast-cluster-computing&#34;&gt;Python + Spark: Lightning Fast Cluster Computing &lt;/a&gt;
+(Jyotiska NK)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/227-django-design-patterns&#34;&gt;Django Design Patterns&lt;/a&gt; (Arun Ravindran)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/207-messing-with-government-data-using-python&#34;&gt;Messing with government data using Python&lt;/a&gt; (Anand Chitipothu)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ya and the lunch was great too.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/253-meet-elasticsearch-my-pet-crunch-monster-directi&#34;&gt;Meet ElasticSearch - My Pet Crunch Monster &lt;/a&gt; (Dhananjay Sathe)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/158-gpu-accelerated-high-performance-computing-primer&#34;&gt;GPU accelerated high performance computing primer
+&lt;/a&gt; (Gurajapu Raja Suman)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The most fascinating talk for me was &lt;em&gt;Messing with government data using Python&lt;/em&gt;
+&lt;em&gt;- Anand Chitipothu&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have some &lt;em&gt;interest in datamining&lt;/em&gt;.
+Mostly I used &lt;em&gt;beautifulsoup and requests&amp;hellip;&lt;/em&gt; to get things done.
+Now, I am going to give a shot to &lt;em&gt;scrapy and mechanize&lt;/em&gt;.
+They seem to differ as they can trigger things at runtime.&lt;/p&gt;
+
+&lt;p&gt;The talk for elastic search was good too. I am a database newbie. Good to attend some new database stuffs.&lt;/p&gt;
+
+&lt;h1 id=&#34;my-schedule-for-next-day:507fb2c83b603b6e0e394a44d252d557&#34;&gt;My schedule for next day :&lt;/h1&gt;
+
+&lt;p&gt;The keynote for next day started with &lt;a href=&#34;https://twitter.com/voidspace&#34;&gt;voidspace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/pycon3.png&#34; alt=&#34;pycon&#34; /&gt;
+
+&amp;gt; He talked about &lt;a href=&#34;https://golang.org/&#34;&gt;go lang&lt;/a&gt; and his startup &lt;a href=&#34;https://jujucharms.com/&#34;&gt;juju&lt;/a&gt;. And how &lt;em&gt;go error&lt;/em&gt; handling differs from others. I also got a chance to talk to him and asked about opensource projects. He adviced me to search for junior jobs on irc channels and see if I can do them.&lt;/p&gt;
+
+&lt;p&gt;My schedule was exciting for this day:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/186-asyncio-for-dummies&#34;&gt;Async IO for Dummies&lt;/a&gt; (Vajrasky Kok)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/248-building-highly-scalable-web-services-with-gevent-experiences-at-plivo&#34;&gt;Building highly scalable web-services with Gevent - experiences at Plivo
+&lt;/a&gt; (Aditya Manthramurthy)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/165-faster-data-processing-in-python&#34;&gt;Faster data processing in Python&lt;/a&gt; (Anand S)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://in.pycon.org/funnel/2014/252-neo4j-and-python-playing-with-graph-data&#34;&gt;Graph everything with Neo4J and Python&lt;/a&gt; (Sonal Raj)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I loved this day&amp;hellip;I loved Faster data processing in Python
+&lt;em&gt;- Anand S&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The talk was very simplistic. Being a newcomer I understood almost everything. The optimization was a benchmark.&lt;/p&gt;
+
+&lt;p&gt;He not only showed ways for faster algorithms, but python libraries to use for faster data processing and also urged people to think whether they need the speed or not.&lt;/p&gt;
+
+&lt;p&gt;He started with a simple program that reads a csv file and formats the required data for votes in a state for the particular year. He explored the data stories visually with Python and basic Javascript.&lt;/p&gt;
+
+&lt;p&gt;He used a basic python code to solve the problem, later he used cpython then pypy @jit to optimize the code. It stared with a runtime of 1.5 millisec in standard python to microsec in cpython and to nanosec in &lt;a href=&#34;http://pypy.org/&#34;&gt;@jit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;He optimized his code as fluent as one can get in algorithms.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And yes how can I miss to mention this 9yr prodigy who programmes an arduino.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/pycon2.png&#34; alt=&#34;pycon&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I will always remember my first pycon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

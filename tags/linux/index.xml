@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Arindam Pradhan</title>
+    <link>http://arindampradhan.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Arindam Pradhan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <atom:link href="http://arindampradhan.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My linux daily apps</title>
+      <link>http://arindampradhan.github.io/my-linux-daily-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://arindampradhan.github.io/my-linux-daily-apps/</guid>
+      <description>
+
+&lt;p&gt;How do you maintain your projects with all the devices and application in a perfect sync? How do you work perfectly in a order that effectively makes your work smoother and easier .Well the answer could be &lt;em&gt;dropbox&lt;/em&gt; but still I am talking about a more synchronized way of doing things on your linux machine.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The zen of workflow for your linux machine&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;how-should-i-do-things-then:a6b5ee297b3ead4a9234f9bc48abd76c&#34;&gt;How should I do things then?&lt;/h2&gt;
+
+&lt;p&gt;A few apps and settings that can boost your productivity on a daily basis.
+But these are mostly ncurses apps &amp;hellip;
+Before you use them&amp;hellip; few things you need to learn art.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;##Learn to confgure your linux&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Linux is kind of like a piece of open art. It only
+gets beautiful for you the way you paint it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Without further ado&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;tmux&lt;/li&gt;
+&lt;li&gt;youtube-dl&lt;/li&gt;
+&lt;li&gt;cmus&lt;/li&gt;
+&lt;li&gt;mplayer&lt;/li&gt;
+&lt;li&gt;pyradio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_1.png&#34; alt=&#34;advanced_terminal_photo&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;###Advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;mplayer lets you play music through terminal.&lt;/li&gt;
+&lt;li&gt;cmus is a ncurses music player&lt;/li&gt;
+&lt;li&gt;youtube-dl as name suggests&lt;/li&gt;
+&lt;li&gt;tmux is the terminal multiplexer (it lets you create sessions and divides terminal to small screens as shown)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Installation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install tmux
+sudo apt-get install youtube-dl
+sudo apt-get install cmus
+sudo apt-get install mplayer
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##youtube-dl hacks&lt;/p&gt;
+
+&lt;p&gt;It works great with videos and music files too.&lt;/p&gt;
+
+&lt;p&gt;You can use it to download music from soundcloud and myspace. Well the proper word will be called stream.&lt;/p&gt;
+
+&lt;p&gt;Right click on your song and copy link location and attach the url at the end of youtube-dl on your terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_2.png&#34; alt=&#34;youtube...soundcloud&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_3.png&#34; alt=&#34;youtube...terminal&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://arindampradhan.github.io/images/2_4.png&#34; alt=&#34;youtube...myspace&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It works on myspace too. Cool, no IDM shit any more&amp;hellip; just copy and paste this sucker.&lt;/p&gt;
+
+&lt;p&gt;##Cmus&lt;/p&gt;
+
+&lt;p&gt;Cmus is one of the best ncurses music player you can have.
+It comes with tons of functionality ranging from creating playlist, list names by artist to creating queue and music tagging.&lt;/p&gt;
+
+&lt;p&gt;Just hit 1 2 &amp;hellip; and so on, you will see all the views.&lt;/p&gt;
+
+&lt;p&gt;Just to help with to add all the music in a folder you just need the following command:
+hit &lt;code&gt;ctrl-C&lt;/code&gt; then  &lt;code&gt;:add ~/Music&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;###Usage:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Hit enter to play 
+Hit c to stop
+Hit e to add to queue
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This &lt;a href=&#34;https://github.com/cmus/cmus/blob/master/Doc/cmus-tutorial.txt&#34;&gt;tutorial&lt;/a&gt; will give you enough experience.&lt;/p&gt;
+
+&lt;p&gt;Want to know &lt;a href=&#34;http://www.tuxarena.com/static/cmus_guide.php&#34;&gt;more about cmus&lt;/a&gt; about cmus ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And yes _ cmus won&amp;rsquo;t work without mplayer_.So don&amp;rsquo;t forget to install mplayer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install mplayer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Tmux&lt;/p&gt;
+
+&lt;p&gt;Tmux is a longer topic like vim.It has really cool features with ssh and session sharing. I will soon update in another blog post.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
