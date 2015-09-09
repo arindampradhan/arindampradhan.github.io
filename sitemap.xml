@@ -15,10 +15,6 @@
   </url>
   
   <url>
-    <loc>http://arindampradhan.github.io/pycon-india/</loc>
-  </url>
-  
-  <url>
     <loc>http://arindampradhan.github.io/my-linux-daily-apps/</loc>
   </url>
   
@@ -28,6 +24,10 @@
   
   <url>
     <loc>http://arindampradhan.github.io/pybelgaum/</loc>
+  </url>
+  
+  <url>
+    <loc>http://arindampradhan.github.io/pycon-india/</loc>
   </url>
   
 </urlset>
